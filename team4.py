@@ -11,12 +11,6 @@ strategy_name = 'The snack that smiles back.'
 strategy_description = 'We start with collude but adapt to our opponents moves.'
     
 def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
-    my_score, their_score are ints.
-    
-    Make my move.
-    Returns 'c' or 'b'. 
-    '''
     if len(my_history)==0: # It's the first round: collude
         return 'c'
     else:
